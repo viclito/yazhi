@@ -1,0 +1,80 @@
+.about{
+    background-color: rgb(254, 255, 247);
+    position: relative;
+
+    .image{
+        position: absolute;
+        inset: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background-image: url(../../public/logo.png);
+        background-repeat: no-repeat;
+        opacity: .05;
+        
+    }
+    .inner{
+        max-width: 1200px;
+        margin: auto;
+
+        .topic{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 0;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to left bottom, rgb(220, 220, 140), rgb(156, 156, 35) , rgb(220, 217, 140));
+            text-shadow: 2px 1px 3px rgb(211, 207, 95);
+            p{
+              border-bottom: 1px solid rgb(211, 207, 95);  
+              display: inline-block;
+            }
+        }
+        .manager{
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            padding: 40px 0;
+            .content{
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                h4{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                h5{
+                    padding-left: 20px;
+                }
+            }
+            .images{
+                position: relative;
+                width: 160px;
+                height: 120px;
+                opacity: 1;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            
+        }
+    }
+}
+@media (max-width:500px) {
+    .about{
+        .manager{
+            flex-direction: column;
+        }
+        .image{
+            top: 10%;
+            left: 0;
+            transform: translate(0 , 0);
+        }
+    }
+}
