@@ -1,0 +1,82 @@
+.works{
+    background-color: rgb(254, 255, 247);
+    .inner{
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px;
+        .topic{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            padding-bottom: 40px;
+            
+
+        }
+        .work{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
+
+            .box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                .image{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 200px;
+                    width: 270px;
+                    position: relative;
+                    cursor: pointer;
+                    img{
+                        height: 200px;
+                        width: 270px;
+                        border-radius: 10px;
+                        transition: .4s;
+                    }
+                    h5{
+                        position: absolute;
+                        width: 90%;
+                        margin: auto;
+                        color: white;
+                        text-align: center;
+                        opacity: 0;
+                        transition: .4s;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.works .work .image:hover h5{
+    opacity: 1 !important;
+}
+.works .work .image:hover img{
+    filter: grayscale(20%) brightness(30%);
+}
+@media (max-width:890px) {
+    .works{
+        .inner{
+            .work{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    .works{
+        .inner{
+            .work{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
