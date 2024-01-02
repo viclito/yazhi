@@ -7,3 +7,6 @@
   'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace; */
   font-family: 'Montserrat', sans-serif;
 }
+body{
+  background: linear-gradient(rgb(23, 22, 20), rgb(67, 63, 56));
+}

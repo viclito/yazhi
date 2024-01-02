@@ -1,5 +1,6 @@
 .about{
-    background-color: rgb(254, 255, 247);
+    background: linear-gradient(rgb(23, 22, 20), rgb(67, 63, 56));
+    background-color: rgb(23, 22, 20);
     position: relative;
 
     .image{
@@ -23,21 +24,22 @@
             font-weight: 700;
             max-width: 900px;
             margin: auto;
-            padding: 60px 0;
+            padding: 220px 0;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
-            background-image: linear-gradient(to left bottom, rgb(220, 220, 140), rgb(156, 156, 35) , rgb(220, 217, 140));
-            text-shadow: 2px 1px 3px rgb(211, 207, 95);
+            background-image: linear-gradient(to left bottom, rgb(208, 234, 205), rgb(230, 231, 229) , rgb(225, 225, 225));
+            text-shadow: 2px 1px 3px rgb(236, 237, 236);
             p{
-              border-bottom: 1px solid rgb(211, 207, 95);  
+              border-bottom: 1px solid rgb(208, 233, 207);  
               display: inline-block;
             }
         }
         .manager{
+            display: none;
             max-width: 700px;
             margin: auto;
-            display: flex;
+            // display: flex;
             align-items: center;
             justify-content: center;
             gap: 70px;
@@ -68,6 +70,16 @@
 }
 @media (max-width:500px) {
     .about{
+        .inner{
+            .topic{
+                p{
+                    font-size: 22px;
+                }
+                h6{
+                    font-size: 20px;
+                }
+            }
+        }
         .manager{
             flex-direction: column;
         }
