@@ -36,19 +36,35 @@ const Footer:React.FC = () => {
                     </div>
                     <div className={styles.box}>
                         <p>Designation : </p>
-                        <h4>MANAGING DIRECTOR</h4>
+                        <h4>MANAGING DIRECTORS</h4>
                     </div>
-                    <div className={styles.box}>
-                        <p>Name : </p>
-                        <h4>R.Praveen Kumar</h4>
+                    <div className={styles.innerbox}>
+                        <div className={styles.box}>
+                            <p>Name : </p>
+                            <h4>R.Praveen Kumar</h4>
+                        </div>
+                        <div className={styles.box}>
+                            <p>Phone : </p>
+                            <h4>8675463333</h4>
+                        </div>
+                        <div className={styles.box}>
+                            <p>Email : </p>
+                            <h4>praveenthala551@gmail.com</h4>
+                        </div>
                     </div>
-                    <div className={styles.box}>
-                        <p>Phone : </p>
-                        <h4>8675463333</h4>
-                    </div>
-                    <div className={styles.box}>
-                        <p>Email : </p>
-                        <h4>praveenthala551@gmail.com</h4>
+                    <div className={styles.innerbox}>
+                        <div className={styles.box}>
+                            <p>Name : </p>
+                            <h4>Jagadeeshwaran L</h4>
+                        </div>
+                        <div className={styles.box}>
+                            <p>Phone : </p>
+                            <h4>6383417063</h4>
+                        </div>
+                        <div className={styles.box}>
+                            <p>Email : </p>
+                            <h4>jagadeeshwaranloganathan@gmail.com</h4>
+                        </div>
                     </div>
                     <div className={styles.box}>
                         <p>Address : </p>

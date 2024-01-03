@@ -9,6 +9,8 @@ import bg from '@/public/bg.jpg'
 import collateral from '@/public/collateral.png'
 import consulting from '@/public/consulting.jpg'
 import msme from '@/public/msme.jpg'
+import vechile from '@/public/vechile.jpg'
+import purchasing from '@/public/purchasing.jpg'
 
 const Works = () => {
   return (
@@ -73,6 +75,22 @@ const Works = () => {
                             <h5>MSME (Micro, Small, and Medium Enterprises) loans support small businesses with financial assistance for growth and development.</h5>
                         </div>
                         <p>MSME loans</p>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.image}>
+                            <Image src={vechile} alt=''/>
+                            <h5>Vehicle loans facilitate the purchase of cars, offering financial assistance for transportation needs.</h5>
+                        </div>
+                        <p>Vechile loans</p>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.image}>
+                            <Image src={purchasing} alt=''/>
+                            <h5>Availing purchasing loans aids enterprises in acquiring crucial assets to enhance productivity and expansion.</h5>
+                        </div>
+                        <p>Purchasing loans
+                            <br /> (land and property)
+                        </p>
                     </div>
                 </div>
             </div>

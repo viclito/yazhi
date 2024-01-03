@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './about.module.scss'
 import Image from 'next/image'
-import chairman from "@/public/mainlogo.jpg"
+import mainlogo from "@/public/mainlogo.jpg"
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
         <div className={styles.about}>
             <div className={styles.image}></div>
             <div className={styles.inner}>
-                <div className={styles.topic}>
+                {/* <div className={styles.topic}>
                    <h1>yAZHi</h1>
                    <p>Promoters & Builders</p>
                    <h6>Engineering & Construction</h6>
@@ -23,6 +23,10 @@ const About = () => {
                         <Image src={chairman} alt='' fill={true}/>
                     </div>
                     
+                </div> */}
+
+                <div className={styles.images}>
+                    <Image src={mainlogo} alt='' fill={true}/>
                 </div>
             </div>
         </div>

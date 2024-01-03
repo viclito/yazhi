@@ -30,3 +30,14 @@
         }
     }
 }
+
+@media (max-width:500px) {
+    .navbar{
+        .inner{
+            justify-content: center !important;
+            .navlist{
+                display: none;
+            }
+        }
+    }
+}

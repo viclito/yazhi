@@ -15,6 +15,10 @@
         
     }
     .inner{
+        padding: 150px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 1200px;
         margin: auto;
 
@@ -66,6 +70,15 @@
             }
             
         }
+        .images{
+            position: relative;
+            width: 80%;
+            height: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 3px 5px 14px #f3f3f3;;
+            
+        }
     }
 }
 @media (max-width:500px) {
@@ -79,6 +92,10 @@
                     font-size: 20px;
                 }
             }
+
+            .images{
+                height: 250px;
+            }
         }
         .manager{
             flex-direction: column;
@@ -87,6 +104,15 @@
             top: 10%;
             left: 0;
             transform: translate(0 , 0);
+        }
+    }
+}
+@media (max-width:400px){
+    .about{
+        .inner{
+            .images{
+                height: 220px;
+            }
         }
     }
 }
