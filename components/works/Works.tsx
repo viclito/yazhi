@@ -11,6 +11,7 @@ import consulting from '@/public/consulting.jpg'
 import msme from '@/public/msme.jpg'
 import vechile from '@/public/vechile.jpg'
 import purchasing from '@/public/purchasing.jpg'
+import gold from '@/public/gold.jpeg'
 
 const Works = () => {
   return (
@@ -82,6 +83,13 @@ const Works = () => {
                             <h5>Vehicle loans facilitate the purchase of cars, offering financial assistance for transportation needs.</h5>
                         </div>
                         <p>Vechile loans</p>
+                    </div>
+                    <div className={styles.box}>
+                        <div className={styles.image}>
+                            <Image src={gold} alt=''/>
+                            <h5>Gold loan: Quick financial solution using gold as collateral for borrowing money.</h5>
+                        </div>
+                        <p>Gold loans</p>
                     </div>
                     <div className={styles.box}>
                         <div className={styles.image}>
